@@ -43,8 +43,20 @@ header {
     font-size: 20px;
     font-weight: 500;
     background-color: #fffd;
-    backdrop-filter: blur(30px);
     box-shadow: 0 0 10px #0002;
+    backdrop-filter: blur(30px);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    margin-top: .5in;
+    height: 4in;
+    width: 100%;
+    background-color: #efefef;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 10px #0002;
+    backdrop-filter: blur(30px);
 }
 
 main {
@@ -57,12 +69,13 @@ main {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     position: relative;
     width: 25vw;
     height: 25vw;
-    min-width: 350px;
-    min-height: 350px;
+    min-width: 340px;
+    min-height: 340px;
     margin: 20px;
     border-radius: 20px;
     background-color: #fff;
