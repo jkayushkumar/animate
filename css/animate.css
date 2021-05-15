@@ -1553,3 +1553,150 @@
         transform: rotateY(-180deg);
     }
 }
+
+.sailboat-ocean-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.ocean {
+    position: absolute;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    left: -2.5%;
+    top: -2.5%;
+    border-radius: inherit;
+    background-image: url("../image/ocean.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: url("#turbulence");
+}
+
+.boat-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 120px;
+    width: 40px;
+}
+
+.sailboat-body-shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0000;
+    border-radius: 60% 60% 30% 30%;
+    border-top: 20px solid #eee0;
+    border-bottom: 10px solid #eee0;
+    box-shadow: 10px 10px 5px #aaa;
+    transform: rotate(45deg);
+}
+
+.sailboat-body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #d9b092;
+    border-radius: 60% 60% 30% 30%;
+    border-top: 20px solid #eee;
+    border-bottom: 10px solid #eee;
+    box-shadow: 3px 0 0 #eee, 3px 0 2px #4446 inset, -1px 0 0 #eee;
+    transform: rotate(45deg);
+}
+
+.sailboat-body-platform-dark {
+    position: absolute;
+    height: 15%;
+    width: 25%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #666;
+    box-shadow: 1px 1px 1px #000;
+    border: 1px solid #eee;
+    border-radius: 2px;
+}
+
+.sailboat-body-platform-light {
+    position: absolute;
+    height: 20%;
+    width: 40%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    box-shadow: 1px 1px 1px #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.salboat-staff {
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    transform-origin: bottom;
+    background-color: #eee;
+    box-shadow: 1px 0 2px #aaa inset;
+    border-radius: 10%;
+}
+
+.sail-one {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -50px;
+    top: 25%;
+    border-bottom: 110px solid rgba(241, 232, 149, 0.9);
+    border-left: 50px solid transparent;
+    transform: skewY(-45deg);
+    box-shadow: 0 10px 0 #4444;
+    animation: sail-one 2s infinite ease-in-out;
+}
+
+.sail-two {
+    position: absolute;
+    width: 150px;
+    height: 130px;
+    left: -50px;
+    top: -2px;
+    background-image: url("../image/sail-2.svg");
+    background-position: initial;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: .9;
+    transform: rotate(-5deg) skewY(-20deg);
+    animation: sail-two 3s infinite ease-in-out;
+}
+
+@keyframes sail-one {
+    0% {
+        transform: skewY(-45deg);
+    }
+    50% {
+        transform: skewY(-45deg) scaleX(1.1) scaleY(.96);
+        left: -52px;
+    }
+    100% {
+        transform: skewY(-45deg);
+    }
+}
+
+@keyframes sail-two {
+    0% {
+        transform: rotate(-5deg) skewY(-20deg);
+    }
+    50% {
+        transform: rotate(-5deg) skewY(-20deg) scaleX(1.2);
+        left: -45px;
+    }
+    100% {
+        transform: rotate(-5deg) skewY(-20deg)
+    }
+}

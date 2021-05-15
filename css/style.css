@@ -85,6 +85,16 @@ main {
     box-shadow: 0 0 10px #0002;
 }
 
+.card-invisible {
+    background-color: #0000!important;
+    box-shadow: none!important;
+}
+
+.top-layer {
+    position: absolute;
+    z-index: 99;
+}
+
 .brdr {
     border: 1px solid black;
 }
