@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -32,16 +33,12 @@
         <filter id="blend" x="0" y="0" width="0" height="0">
             <feTurbulence id="blend-filter" numOctaves="10" seed="20" baseFrequency='0.1' result='noise'
                 type="turbulence" />
-            <!-- <feDiffuseLighting in='noise' lighting-color='#fff3' surfaceScale='2'>
-                <feDistantLight azimuth='45' elevation='100' />
-            </feDiffuseLighting> -->
             <feDisplacementMap scale="10" in="SourceGraphic"></feDisplacementMap>
             <animate xlink:href="#blend-filter" attributeName="baseFrequency" dur=".1s" keyTimes="0;0.5;1"
                 values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
         </filter>
     </svg>
     <main>
-
         <div class="card card-invisible">
             <div class="sailboat-ocean-container">
                 <div class="ocean">
@@ -56,6 +53,44 @@
                         <div class="salboat-staff">
                             <div class="sail-one"></div>
                             <div class="sail-two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="clock-container">
+                <div class="clock-body">
+                    <div class="num-grp">
+                        <div class="num-1 bold"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div id="clock-time-one" class="num-grp">
+                        <div class="num-1"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div id="clock-time-two" class="num-grp">
+                        <div class="num-1"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div id="clock-time-three" class="num-grp">
+                        <div class="num-1"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div id="clock-time-four" class="num-grp">
+                        <div class="num-1"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div id="clock-time-five" class="num-grp">
+                        <div class="num-1"></div>
+                        <div class="num-2"></div>
+                    </div>
+                    <div class="clock-hand-div">
+                        <div id="hour-hand"></div>
+                        <div id="minute-hand"></div>
+                        <div id="second-hand">
+                            <div class="second-hand-div"></div>
+                            <div class="clock-disc"></div>
                         </div>
                     </div>
                 </div>
