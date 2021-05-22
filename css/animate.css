@@ -1700,3 +1700,127 @@
         transform: rotate(-5deg) skewY(-20deg)
     }
 }
+
+.mixer-container {
+    height: 100%;
+    width: 100%;
+}
+
+.mixer-base {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
+    height: 25%;
+    width: 20%;
+    perspective: 20em;
+}
+
+.mixer-base-div {
+    border-radius: 5px 5px 10px 10px;
+    /* background-color: #40d1d7; */
+    background-color: #cb73ce;
+    box-shadow: 10px 4px 8px #eee9 inset, -5px -2px 10px #4445 inset;
+    height: 85%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg);
+    border-bottom: 8px solid #464741;
+    border-top: 10px solid #464741;
+}
+
+.mixer-regulator {
+    position: absolute;
+    height: 30%;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #464741;
+}
+
+.regulator-knob {
+    position: absolute;
+    height: 70%;
+    width: 10%;
+    top: 15%;
+    left: 45%;
+    background-color: #757573;
+    box-shadow: 2px 0 #222;
+    border-radius: 5px;
+}
+
+.mixer-vessel {
+    position: absolute;
+    height: 30%;
+    width: 20%;
+    left: 50%;
+    bottom: 44.7%;
+    transform: translateX(-50%);
+    perspective: 20em;
+}
+
+.mixer-vessel-div {
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 80%;
+    left: 10%;
+    top: calc(-6% - 10px);
+    transform: rotateX(-40Deg);
+    transform-origin: bottom;
+    border-radius: 10px 10px 0 0;
+    /* border-bottom: 15px solid #254e50; */
+    /* border-top: 15px solid #254e50; */
+    border-bottom: 15px solid #633664;
+    border-top: 15px solid #592e5a;
+}
+
+.vessel-div-div {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    top: -5px;
+    background-color: #dcdedd;
+    box-shadow: 10px 4px 8px rgba(163, 162, 162, 0.6) inset, -5px -2px 10px #4445 inset;
+    opacity: .5;
+}
+
+.mixer-vessel-cap {
+    position: absolute;
+    z-index: -1;
+    width: 40%;
+    left: 30%;
+    top: -20px;
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+    /* background-color: #40d1d7; */
+    background-color: #cb73ce;
+    box-shadow: 2px 2px #eee9 inset, -2px -2px #4445 inset;
+}
+
+.juice {
+    height: 65%;
+    width: 92%;
+    position: absolute;
+    top: 35.5%;
+    left: 2%;
+    background-image: url("../image/juice.PNG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: url("#blend");
+}
+
+.handle {
+    position: absolute;
+    left: 100%;
+    top: -5%;
+    height: 40%;
+    width: 15%;
+    background-color: #0000;
+    border-radius: 0 10px 5px 0;
+    border-top: 6px solid #633664;
+    border-right: 4px solid #633664;
+}

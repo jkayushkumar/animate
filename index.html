@@ -29,8 +29,19 @@
             <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="20s" keyTimes="0;0.5;1"
                 values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
         </filter>
+        <filter id="blend" x="0" y="0" width="0" height="0">
+            <feTurbulence id="blend-filter" numOctaves="10" seed="20" baseFrequency='0.1' result='noise'
+                type="turbulence" />
+            <!-- <feDiffuseLighting in='noise' lighting-color='#fff3' surfaceScale='2'>
+                <feDistantLight azimuth='45' elevation='100' />
+            </feDiffuseLighting> -->
+            <feDisplacementMap scale="10" in="SourceGraphic"></feDisplacementMap>
+            <animate xlink:href="#blend-filter" attributeName="baseFrequency" dur=".1s" keyTimes="0;0.5;1"
+                values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite" />
+        </filter>
     </svg>
     <main>
+
         <div class="card card-invisible">
             <div class="sailboat-ocean-container">
                 <div class="ocean">
@@ -46,6 +57,24 @@
                             <div class="sail-one"></div>
                             <div class="sail-two"></div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="mixer-container">
+                <div class="mixer-base">
+                    <div class="mixer-base-div"></div>
+                    <div class="mixer-regulator">
+                        <div class="regulator-knob"></div>
+                    </div>
+                </div>
+                <div class="mixer-vessel">
+                    <div class="mixer-vessel-div">
+                        <div class="handle"></div>
+                        <div class="mixer-vessel-cap"></div>
+                        <div class="juice"></div>
+                        <div class="vessel-div-div"></div>
                     </div>
                 </div>
             </div>
@@ -208,7 +237,7 @@
                 <figure class="page"></figure>
             </div>
         </div>
-        <div class="card card-invisible"></div>
+
         <div class="card card-invisible"></div>
         <footer>
 
